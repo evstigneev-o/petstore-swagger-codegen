@@ -10,10 +10,11 @@
  * Do not edit the class manually.
  */
 
-package io.swagger.client.model;
+package example.model;
 
 import java.util.Objects;
 import java.util.Arrays;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
@@ -21,74 +22,56 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
+import java.io.Serializable;
 /**
- * Pet
+ * Error
  */
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2023-08-18T17:01:12.483366+03:00[Europe/Moscow]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2023-08-18T17:47:53.189151+03:00[Europe/Moscow]")
+@JsonInclude(JsonInclude.Include.NON_NULL)
 
-public class Pet {
-  @SerializedName("id")
-  private Long id = null;
+public class Error implements Serializable{
+  private static final long serialVersionUID = 1L;
+  @SerializedName("code")
+  private Integer code = null;
 
-  @SerializedName("name")
-  private String name = null;
+  @SerializedName("message")
+  private String message = null;
 
-  @SerializedName("tag")
-  private String tag = null;
-
-  public Pet id(Long id) {
-    this.id = id;
+  public Error code(Integer code) {
+    this.code = code;
     return this;
   }
 
    /**
-   * Get id
-   * @return id
+   * Get code
+   * @return code
   **/
   @Schema(required = true, description = "")
-  public Long getId() {
-    return id;
+  public Integer getCode() {
+    return code;
   }
 
-  public void setId(Long id) {
-    this.id = id;
+  public void setCode(Integer code) {
+    this.code = code;
   }
 
-  public Pet name(String name) {
-    this.name = name;
+  public Error message(String message) {
+    this.message = message;
     return this;
   }
 
    /**
-   * Get name
-   * @return name
+   * Get message
+   * @return message
   **/
   @Schema(required = true, description = "")
-  public String getName() {
-    return name;
+  public String getMessage() {
+    return message;
   }
 
-  public void setName(String name) {
-    this.name = name;
-  }
-
-  public Pet tag(String tag) {
-    this.tag = tag;
-    return this;
-  }
-
-   /**
-   * Get tag
-   * @return tag
-  **/
-  @Schema(description = "")
-  public String getTag() {
-    return tag;
-  }
-
-  public void setTag(String tag) {
-    this.tag = tag;
+  public void setMessage(String message) {
+    this.message = message;
   }
 
 
@@ -100,26 +83,24 @@ public class Pet {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    Pet pet = (Pet) o;
-    return Objects.equals(this.id, pet.id) &&
-        Objects.equals(this.name, pet.name) &&
-        Objects.equals(this.tag, pet.tag);
+    Error error = (Error) o;
+    return Objects.equals(this.code, error.code) &&
+        Objects.equals(this.message, error.message);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, name, tag);
+    return Objects.hash(code, message);
   }
 
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class Pet {\n");
+    sb.append("class Error {\n");
     
-    sb.append("    id: ").append(toIndentedString(id)).append("\n");
-    sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
+    sb.append("    code: ").append(toIndentedString(code)).append("\n");
+    sb.append("    message: ").append(toIndentedString(message)).append("\n");
     sb.append("}");
     return sb.toString();
   }

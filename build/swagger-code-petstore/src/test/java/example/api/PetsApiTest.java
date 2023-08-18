@@ -1,9 +1,9 @@
-package io.swagger.client.api;
+package example.api;
 
-import io.swagger.client.ApiClient;
-import io.swagger.client.model.Error;
-import io.swagger.client.model.Pet;
-import io.swagger.client.model.Pets;
+import example.ApiClient;
+import example.model.Error;
+import example.model.Pet;
+import example.model.Pets;
 import org.junit.Before;
 import org.junit.Test;
 

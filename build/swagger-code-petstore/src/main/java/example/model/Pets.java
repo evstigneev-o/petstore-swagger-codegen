@@ -10,20 +10,24 @@
  * Do not edit the class manually.
  */
 
-package io.swagger.client.model;
+package example.model;
 
 import java.util.Objects;
 import java.util.Arrays;
-import io.swagger.client.model.Pet;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import example.model.Pet;
 import java.util.ArrayList;
 import java.util.List;
+import java.io.Serializable;
 /**
  * Pets
  */
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2023-08-18T17:01:12.483366+03:00[Europe/Moscow]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2023-08-18T17:47:53.189151+03:00[Europe/Moscow]")
+@JsonInclude(JsonInclude.Include.NON_NULL)
 
-public class Pets extends ArrayList<Pet> {
+public class Pets extends ArrayList<Pet> implements Serializable{
+  private static final long serialVersionUID = 1L;
 
   @Override
   public boolean equals(java.lang.Object o) {

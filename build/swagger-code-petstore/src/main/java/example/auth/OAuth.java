@@ -1,4 +1,4 @@
-package io.swagger.client.auth;
+package example.auth;
 
 import static java.net.HttpURLConnection.HTTP_UNAUTHORIZED;
 import static java.net.HttpURLConnection.HTTP_FORBIDDEN;

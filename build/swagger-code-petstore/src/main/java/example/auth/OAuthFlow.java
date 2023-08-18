@@ -10,7 +10,7 @@
  * Do not edit the class manually.
  */
 
-package io.swagger.client.auth;
+package example.auth;
 
 public enum OAuthFlow {
     accessCode, implicit, password, application

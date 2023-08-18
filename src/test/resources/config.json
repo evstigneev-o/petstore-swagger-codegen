@@ -1,0 +1,8 @@
+{
+  "library": "retrofit2",
+  "modelPackage": "example.model",
+  "apiPackage": "example.api",
+  "invokerPackage": "example",
+  "serializableModel": true,
+  "notNullJacksonAnnotation": true
+}

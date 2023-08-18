@@ -1,4 +1,4 @@
-package io.swagger.client;
+package example;
 
 import java.util.Arrays;
 import java.util.List;

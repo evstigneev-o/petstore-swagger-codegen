@@ -1,3 +1,5 @@
+import org.hidetake.gradle.swagger.generator.SwaggerSource
+
 plugins {
     id 'org.hidetake.swagger.generator' version '2.19.2'
     id 'java'
@@ -19,7 +21,7 @@ swaggerSources {
         code {
             language = 'java'
             jvmArgs = ['--add-opens=java.base/java.util=ALL-UNNAMED']
-            library = 'retrofit2'
+            configFile = file('src/test/resources/config.json')
         }
     }
 }

@@ -1,4 +1,4 @@
-package io.swagger.client;
+package example;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonParseException;
@@ -14,11 +14,11 @@ import retrofit2.Converter;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.converter.scalars.ScalarsConverterFactory;
-import io.swagger.client.auth.HttpBasicAuth;
-import io.swagger.client.auth.ApiKeyAuth;
-import io.swagger.client.auth.OAuth;
-import io.swagger.client.auth.OAuth.AccessTokenListener;
-import io.swagger.client.auth.OAuthFlow;
+import example.auth.HttpBasicAuth;
+import example.auth.ApiKeyAuth;
+import example.auth.OAuth;
+import example.auth.OAuth.AccessTokenListener;
+import example.auth.OAuthFlow;
 
 import java.io.IOException;
 import java.lang.annotation.Annotation;

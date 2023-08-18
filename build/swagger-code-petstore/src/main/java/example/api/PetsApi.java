@@ -1,6 +1,6 @@
-package io.swagger.client.api;
+package example.api;
 
-import io.swagger.client.CollectionFormats.*;
+import example.CollectionFormats.*;
 
 import retrofit2.Call;
 import retrofit2.http.*;
@@ -8,9 +8,9 @@ import retrofit2.http.*;
 import okhttp3.RequestBody;
 import okhttp3.ResponseBody;
 
-import io.swagger.client.model.Error;
-import io.swagger.client.model.Pet;
-import io.swagger.client.model.Pets;
+import example.model.Error;
+import example.model.Pet;
+import example.model.Pets;
 
 import java.util.ArrayList;
 import java.util.HashMap;
