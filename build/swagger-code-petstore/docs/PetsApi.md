@@ -17,8 +17,8 @@ Create a pet
 ### Example
 ```java
 // Import classes:
-//import example.ApiException;
-//import example.api.PetsApi;
+//import petstore.ApiException;
+//import petstore.api.PetsApi;
 
 
 PetsApi apiInstance = new PetsApi();
@@ -56,8 +56,8 @@ List all pets
 ### Example
 ```java
 // Import classes:
-//import example.ApiException;
-//import example.api.PetsApi;
+//import petstore.ApiException;
+//import petstore.api.PetsApi;
 
 
 PetsApi apiInstance = new PetsApi();
@@ -99,8 +99,8 @@ Info for a specific pet
 ### Example
 ```java
 // Import classes:
-//import example.ApiException;
-//import example.api.PetsApi;
+//import petstore.ApiException;
+//import petstore.api.PetsApi;
 
 
 PetsApi apiInstance = new PetsApi();

@@ -1,8 +1,8 @@
 {
   "library": "retrofit2",
-  "modelPackage": "example.model",
-  "apiPackage": "example.api",
-  "invokerPackage": "example",
+  "modelPackage": "petstore.model",
+  "apiPackage": "petstore.api",
+  "invokerPackage": "petstore",
   "serializableModel": true,
   "notNullJacksonAnnotation": true
 }
